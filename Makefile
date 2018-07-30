@@ -11,7 +11,7 @@ clean:
 	@find . -type f -name '*.pyc' -delete
 
 bootstrap:
-	@pip install --upgrade setuptools.
+	@pip install --upgrade setuptools --user python
 	@pip install -r requirements.txt
 	@pip install -r requirements-test.txt
 	@python setup.py develop
